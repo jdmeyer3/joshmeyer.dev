@@ -3,8 +3,9 @@ import Intro from "./Intro";
 // import Skills from "./Skills";
 
 export default function Home() {
+  
   return (
-    <div className="min-h-screen dotted-background overflow-scroll	font-[family-name:var(--font-geist-sans)]">
+    <div nonce="" className="min-h-screen dotted-background overflow-scroll	font-[family-name:var(--font-geist-sans)]">
       <Intro/>
       {/* <Skills/> */}
       <footer className="pb-5 row-start-3 flex flex-col gap-8 flex-wrap items-center justify-center">
