@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { StarsBackground } from "@/components/ui/stars-background";
-import { ShootingStars } from "@/components/ui/shooting-stars";
 import { Vortex } from "@/components/ui/vortex";
 
 const geistSans = localFont({
@@ -39,8 +37,6 @@ export default function RootLayout({
         <main />
         {children}
         </Vortex>
-        {/* <ShootingStars />
-        <StarsBackground /> */}
       </body>
       
     </html>
