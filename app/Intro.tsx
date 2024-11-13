@@ -1,3 +1,6 @@
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
+
 export default function Intro() {
   return (
     <div className="grid grid-rows-1 items-center justify-items-center h-[calc(100vh-106px)]">

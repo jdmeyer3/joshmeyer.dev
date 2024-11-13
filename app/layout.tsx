@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { StarsBackground } from "@/components/ui/stars-background";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { Vortex } from "@/components/ui/vortex";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,9 +30,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Vortex
+          backgroundColor="black"
+          rangeY={800}
+          particleCount={500}
+          baseHue={600}
+          className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-[calc(100vh)]">
         <main />
         {children}
+        </Vortex>
+        {/* <ShootingStars />
+        <StarsBackground /> */}
       </body>
+      
     </html>
   );
 }
